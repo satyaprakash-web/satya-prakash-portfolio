@@ -242,9 +242,9 @@ export const projects = [
   {
     id: 3,
     title: "Grocery-website",
-    date: "Dec 2021 - Apr 2022",
+    date: "Sept 2023",
     description:
-      "Welcome to VEGGILANCE GROCERY, your one-stop online destination for all your grocery needs. Shop for fresh fruits, vegetables, pulses, bread, and more, anytime, anywhere. Our user-friendly website combines HTML, CSS, and JavaScript to offer a seamless and visually appealing shopping experience. Say goodbye to the hassle of traditional grocery shopping and embrace the convenience of online ordering, 24/7, rain or shine.",
+      "Welcome to VEGGILANCE GROCERY, your one-stop online destination for all your grocery needs. Shop for fresh fruits, vegetables, pulses, bread, and more, anytime, anywhere. Our user-friendly website combines HTML, CSS, and JavaScript to offer a seamless and visually appealing shopping experience. Say goodbye to the hassle of traditional grocery shopping and embrace the convenience of online ordering, 24/7.",
     image:
       images.groceryWebsite,
     tags: ["HTML", "CSS", "Javascipt"],
