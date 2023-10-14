@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/satya-prakash-portfolio/static/css/main.bf538fe7.css",
-    "main.js": "/satya-prakash-portfolio/static/js/main.8401dc26.js",
+    "main.js": "/satya-prakash-portfolio/static/js/main.5b5f4f53.js",
     "static/media/Grocery_website.png": "/satya-prakash-portfolio/static/media/Grocery_website.67839c538991b4c67623.png",
     "static/media/Blog-app.png": "/satya-prakash-portfolio/static/media/Blog-app.189fa34f8e2988dacadf.png",
     "static/media/Task_remainderapp.png": "/satya-prakash-portfolio/static/media/Task_remainderapp.b8a58283f26b680de20e.png",
@@ -9,10 +9,10 @@
     "static/media/HeroImage.jpeg": "/satya-prakash-portfolio/static/media/HeroImage.e497b97f3b4ac6f9e7a3.jpeg",
     "index.html": "/satya-prakash-portfolio/index.html",
     "main.bf538fe7.css.map": "/satya-prakash-portfolio/static/css/main.bf538fe7.css.map",
-    "main.8401dc26.js.map": "/satya-prakash-portfolio/static/js/main.8401dc26.js.map"
+    "main.5b5f4f53.js.map": "/satya-prakash-portfolio/static/js/main.5b5f4f53.js.map"
   },
   "entrypoints": [
     "static/css/main.bf538fe7.css",
-    "static/js/main.8401dc26.js"
+    "static/js/main.5b5f4f53.js"
   ]
 }
