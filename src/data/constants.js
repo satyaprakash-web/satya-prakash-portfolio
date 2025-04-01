@@ -1,16 +1,19 @@
-import images from "../images/index.js"
+import images from "../images/index.js";
 export const Bio = {
   name: "Satya Prakash Tiwari",
-  roles: [
-    "Full Stack Developer",
-    "Problem Solver",
-    "Programmer",
-  ],
-  description:
-    "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
+  roles: ["Full Stack Developer", "Problem Solver", "Programmer"],
+  description: `I’m a Full Stack Developer with expertise in React.js and Node.js., specializing in building scalable web applications. 
+ Currently, I’m working at Wesoftek Solutions, where I'm building features for Supermanage. I have strong experience in :
+
+- Frontend : React, React Router, Hooks, Redux, Context API
+- Backend : RESTful APIs, Express.js, JWT authentication
+- Databases : MySQL, MongoDB
+- Version Control : Git, GitLab
+
+Always eager to learn and take on new challenges. Let’s connect`,
   github: "https://github.com/satyaprakash-web",
   resume:
-    "https://drive.google.com/file/d/1PNrnAFXGyp3_Qu01CORerN74MeZXSHys/view",
+    "https://drive.google.com/file/d/1aswwrHjxarAp2twz1tGUlFWJ2i2kJtFM/view",
   linkedin: "https://www.linkedin.com/in/satyaprakash-web",
   twitter: "https://www.instagram.com/satya_prakash872/",
   insta: "https://www.instagram.com/satya_prakash872/",
@@ -142,10 +145,17 @@ export const experiences = [
   {
     id: 1,
     img: "",
-    role: "Fullstack Externship",
-    company: "",
-    date: "June 2023 - July 2023",
-    desc: "",
+    role: "Software EngineerS",
+    company: "Wesoftek Solutions",
+    date: "August 2024 - Present",
+    desc: `𝗦𝘂𝗽𝗲𝗿𝗺𝗮𝗻𝗮𝗴𝗲 𝗪𝗲𝗯  
+    - Designed and developed a responsive desktop web platform, ensuring high performance and usability.  
+    - Implemented premium features with Razorpay for seamless subscriptions, admin-side coupon creation, and business-side discounts.  
+    - Boosted web performance by 50% through lazy loading and optimized API calls.  
+  
+    𝗜𝗻𝘃𝗲𝗻𝘁𝗼𝗿𝘆 𝗠𝗮𝗻𝗮𝗴𝗲𝗺𝗲𝗻𝘁 𝗦𝘆𝘀𝘁𝗲𝗺  
+    - Built a system for managing product listings, categories, supplier onboarding, and stock adjustments for efficient inventory tracking.`,
+
     skills: [
       "ReactJS",
       "Redux",
@@ -154,10 +164,34 @@ export const experiences = [
       "HTML",
       "CSS",
       "JavaScript",
-      "MongoDB",
     ],
   },
-  
+  {
+    id: 1,
+    img: "",
+    role: "Software Engineer Intern",
+    company: "",
+    date: "Dec 2023 - July 2024",
+    desc: `𝗩𝗲𝗵𝗶𝗰𝗹𝗲 𝗠𝗮𝗻𝗮𝗴𝗲𝗺𝗲𝗻𝘁 𝗦𝘆𝘀𝘁𝗲𝗺 
+- Developed a dashboard for tracking vehicles, fuel, service, and expenses, along with driver onboarding. 
+
+- Integrated trip logging, expense management, and report export feature.
+ 
+𝗣𝗮𝘆𝘀𝗹𝗶𝗽 𝗠𝗮𝗻𝗮𝗴𝗲𝗺𝗲𝗻𝘁
+- Created a customizable payslip generation system with real-time PDF previews and secure S3 storage for seamless access and sharing.`,
+    skills: [
+      "ReactJS",
+      "Redux",
+      "NodeJs",
+      "Material UI",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "REST APIs",
+      "SASS",
+      "Responsive Web Design",
+    ],
+  },
 ];
 
 export const education = [
@@ -166,8 +200,8 @@ export const education = [
     img: "https://upload.wikimedia.org/wikipedia/en/3/3a/Lovely_Professional_University_logo.png",
     school: "Lovely Professional University, Jalandhar",
     date: "Aug 2020 - July 2024",
-    grade: "8.18 CGPA",
-    desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Lovely Professional University, Jalandhar, Punjab. I have completed 6 semesters and have a CGPA of 8.18. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others.",
+    grade: "8.3 CGPA",
+    desc: "I completed my Bachelor's degree in Computer Science and Engineering at Lovely Professional University with a CGPA of 8.3., Jalandhar, Punjab.  I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others.",
     degree: "Bachelor of Technology - BTech, Computer Science and Engineering",
   },
   {
@@ -197,9 +231,8 @@ export const projects = [
     date: "Apr 2023 ",
     description:
       "Developed a full-stack web application that allows users to create account, login and write blog posts.To enhance security, I implemented password hashing using the Bcrypt Js library. Users can easily filter posts by clicking on the author's name. The application utilizes MongoDB for storing user data and offers CRUD operations for blog posts, as well as updating user profiles through using REST API.",
-    image:
-      images.blogApp,
-    tags: ["React Js", "Node Js", "Express Js","MongoDb", "Redux", "REST API"],
+    image: images.blogApp,
+    tags: ["React Js", "Node Js", "Express Js", "MongoDb", "Redux", "REST API"],
     category: "web app",
     github: "https://github.com/satyaprakash-web",
     webapp: "https://blogs-trust-frontend.vercel.app/login/",
@@ -210,8 +243,7 @@ export const projects = [
     date: "June 2023 ",
     description:
       " Developed a web application using Node.js and Nodemailer, featuring task reminders via email, secure user authentication using JWT , and OTP-based email verification. Additionally, the application offers user-friendly functionalities like forgot password and OTP resending, enhancing accessibility. Users can efficiently manage tasks with CRUD operations, streamlining task management and boosting productivity within the platform.",
-    image:
-      images.taskRemainder,
+    image: images.taskRemainder,
     tags: [
       "React Js",
       "MongoDb",
@@ -232,8 +264,7 @@ export const projects = [
     date: "Mar 2023",
     description:
       "Developed a weather information app that retrieves real-time weather details for any location, including current temperature, humidity, wind speed, and real feel. The app also displays the localized date and time information, integrates a search feature, and provides sunrise and sunset times, all powered by a reliable weather API for accurate and up-to-date data.",
-    image:
-     images.weatherApp,
+    image: images.weatherApp,
     tags: ["React js", "Tailwind CSS", "Open weather API"],
     category: "web app",
     github: "https://github.com/satyaprakash-web",
@@ -245,12 +276,10 @@ export const projects = [
     date: "Sept 2023",
     description:
       "Welcome to VEGGILANCE GROCERY, your one-stop online destination for all your grocery needs. Shop for fresh fruits, vegetables, pulses, bread, and more, anytime, anywhere. Our user-friendly website combines HTML, CSS, and JavaScript to offer a seamless and visually appealing shopping experience. Say goodbye to the hassle of traditional grocery shopping and embrace the convenience of online ordering, 24/7.",
-    image:
-      images.groceryWebsite,
+    image: images.groceryWebsite,
     tags: ["HTML", "CSS", "Javascipt"],
     category: "Web-app",
     webapp: "https://grocery-website-ten-delta.vercel.app/",
     github: "https://github.com/satyaprakash-web",
   },
 ];
-
