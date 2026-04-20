@@ -13,7 +13,7 @@ export const Bio = {
 Always eager to learn and take on new challenges. Let’s connect`,
   github: "https://github.com/satyaprakash-web",
   resume:
-    "https://drive.google.com/file/d/1aswwrHjxarAp2twz1tGUlFWJ2i2kJtFM/view",
+    "https://drive.google.com/file/d/1yfb6cbAxP6l1jP3_MNhFHaJeycY5yosu/view",
   linkedin: "https://www.linkedin.com/in/satyaprakash-web",
   twitter: "https://www.instagram.com/satya_prakash872/",
   insta: "https://www.instagram.com/satya_prakash872/",
