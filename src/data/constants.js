@@ -21,8 +21,7 @@ My core expertise includes:
 - Tools: Git, GitLab, Postman, Docker, CI/CD Basics, VS Code
 - Integrations: Razorpay, Easebuzz, PayU
 
-I’m passionate about building clean, efficient, and user-focused applications that solve real business problems while delivering great performance and scalability.`
-Always eager to learn and take on new challenges. Let’s connect`,
+I’m passionate about building clean, efficient, and user-focused applications that solve real business problems while delivering great performance and scalability. Always eager to learn and take on new challenges. Let’s connect`,
   github: "https://github.com/satyaprakash-web",
   resume:
     "https://drive.google.com/file/d/1yfb6cbAxP6l1jP3_MNhFHaJeycY5yosu/view",
