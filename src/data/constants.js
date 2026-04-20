@@ -1,15 +1,27 @@
 import images from "../images/index.js";
 export const Bio = {
   name: "Satya Prakash Tiwari",
-  roles: ["Full Stack Developer", "Problem Solver", "Programmer"],
-  description: `I’m a Full Stack Developer with expertise in React.js and Node.js., specializing in building scalable web applications. 
- Currently, I’m working at Wesoftek Solutions, where I'm building features for Supermanage. I have strong experience in :
+ roles: [
+  "Frontend Developer",
+  "Backend Developer",
+  "Full Stack Developer",
+  "Software Engineer",
+  "Problem Solver"
+],
 
-- Frontend : React, React Router, Hooks, Redux, Context API
-- Backend : RESTful APIs, Express.js, JWT authentication
-- Databases : MySQL, MongoDB
-- Version Control : Git, GitLab
+description: `I’m a Full Stack Developer with 2+ years of experience building scalable, high-performance web applications using React.js, Node.js, and modern JavaScript technologies.
 
+Currently, I’m working at Wesoftek Solutions as a Software Engineer, where I develop and optimize products like SuperManage (HRMS Platform) and TezCredit (Loan Lending Platform). I contribute across frontend, backend, APIs, real-time systems, payments, and performance optimization.
+
+My core expertise includes:
+
+- Frontend: React.js, JavaScript, TypeScript, Redux, Context API, React Router, Hooks, Vite, HTML, CSS, SCSS, Tailwind CSS
+- Backend: Node.js, Express.js, REST APIs, JWT Authentication, RBAC, WebSockets
+- Databases: PostgreSQL, MongoDB, MySQL
+- Tools: Git, GitLab, Postman, Docker, CI/CD Basics, VS Code
+- Integrations: Razorpay, Easebuzz, PayU
+
+I’m passionate about building clean, efficient, and user-focused applications that solve real business problems while delivering great performance and scalability.`
 Always eager to learn and take on new challenges. Let’s connect`,
   github: "https://github.com/satyaprakash-web",
   resume:
