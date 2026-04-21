@@ -10,13 +10,11 @@ import {
   ButtonContainer,
   MobileIcon,
   MobileMenu,
-  MobileNavLogo,
   MobileLink,
 } from "./NavbarStyledComponent";
 import { DiCssdeck } from "react-icons/di";
 import { FaBars } from "react-icons/fa";
 import { Bio } from "../../data/constants";
-import { Close, CloseRounded, LinkedIn } from "@mui/icons-material";
 import { useTheme } from "styled-components";
 
 const Navbar = () => {
@@ -26,7 +24,7 @@ const Navbar = () => {
     <Nav>
       <NavbarContainer>
         <NavLogo to="/">
-          <a
+          <span
             style={{
               display: "flex",
               alignItems: "center",
@@ -36,7 +34,7 @@ const Navbar = () => {
             }}
           >
             <DiCssdeck size="3rem" /> <Span>Portfolio</Span>
-          </a>
+          </span>
         </NavLogo>
         <MobileIcon>
           <FaBars
