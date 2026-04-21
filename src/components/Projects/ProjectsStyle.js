@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import _default from '../../themes/default';
 
 export const Container = styled.div`
     background: radial-gradient(80% 50% at 50% 0%, rgba(139, 124, 248, 0.08) 0%, transparent 55%);
