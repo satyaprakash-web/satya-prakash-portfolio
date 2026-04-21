@@ -3,8 +3,11 @@ import styled from 'styled-components';
 import _default from '../../themes/default';
 
 export const Nav = styled.div`
-    background-color: ${({theme}) => theme.card_light};
-    height: 80px;
+    background: ${({ theme }) => theme.card_light + "e6"};
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid ${({ theme }) => theme.border};
+    height: 72px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,7 +16,7 @@ export const Nav = styled.div`
     top: 0;
     z-index: 10;
     @media (max-width: 960px) {
-        trastion: 0.8s all ease;
+        transition: 0.3s ease;
     }
 `;
 export const NavbarContainer = styled.div`
@@ -74,12 +77,12 @@ export const NavLink = styled.a`
 
 
 export const GitHubButton = styled.a`
-  border: 1.8px solid ${({ theme }) => theme.primary};
+  border: 1px solid ${({ theme }) => theme.primary};
   justify-content: center;
   display: flex;
   align-items: center;
   height: 70%;
-  border-radius: 20px;
+  border-radius: 10px;
   color: ${({ theme }) => theme.primary};
   cursor: pointer;
   padding: 0 20px;
@@ -170,12 +173,12 @@ export const MobileMenuLink = styled(LinkR)`
 `;
 
 export const MobileMenuButton = styled.a`
-  border: 1.8px solid ${({ theme }) => theme.primary};
+  border: 1px solid ${({ theme }) => theme.primary};
   justify-content: center;
   display: flex;
   align-items: center;
   height: 70%;
-  border-radius: 20px;
+  border-radius: 10px;
   color: ${({ theme }) => theme.primary};
   cursor: pointer;
   padding: 0 20px;

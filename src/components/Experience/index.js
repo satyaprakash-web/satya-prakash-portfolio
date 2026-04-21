@@ -30,8 +30,8 @@ const Wrapper = styled.div`
   flex-direction: column;
   width: 100%;
   max-width: 1350px;
-  padding: 80px 0;
-  gap: 12px;
+  padding: 56px 0 72px;
+  gap: 16px;
   @media (max-width: 960px) {
     flex-direction: column;
   }
@@ -51,9 +51,12 @@ const Title = styled.div`
 
 const Desc = styled.div`
   font-size: 18px;
+  line-height: 1.6;
   text-align: center;
-  max-width: 600px;
+  max-width: 720px;
+  padding: 0 16px;
   color: ${({ theme }) => theme.text_secondary};
+  white-space: pre-line;
   @media (max-width: 768px) {
     margin-top: 12px;
     font-size: 16px;
@@ -77,22 +80,18 @@ const index = () => {
       <Wrapper>
         <Title>Experience</Title>
         <Desc>
-          My work experience as a Software Engineer includes working on
-          Supermanage project. SuperManage is a HRMS, workforce management
-          solution streamlining employee, payroll, documents, business and user
-          management. I developed key features like a subscription system,
-          payslip generator, Inventory Management, Vehicle Management, document
-          management, role-based access, and supervisor dashboards for
-          approvals.
+          {`At Wesoftek Solutions I grew from intern to Software Engineer—shipping lending and HRMS products end to end.
+
+Stack: React.js, Node.js, TypeScript, PostgreSQL, MongoDB, payments, PDF workflows, WebSockets, AWS Lambda.`}
         </Desc>
         <TimelineSection>
           <Timeline>
             {experiences.map((experience, index) => (
-              <TimelineItem>
+              <TimelineItem key={experience.id}>
                 <TimelineSeparator>
                   <TimelineDot variant="outlined" color="secondary" />
                   {index !== experiences.length - 1 && (
-                    <TimelineConnector style={{ background: "#854CE6" }} />
+                    <TimelineConnector style={{ background: "#8b7cf8" }} />
                   )}
                 </TimelineSeparator>
                 <TimelineContent sx={{ py: "12px", px: 2 }}>

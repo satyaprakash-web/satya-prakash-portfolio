@@ -9,19 +9,11 @@ export const Bio = {
   "Problem Solver"
 ],
 
-description: `I’m a Full Stack Developer with 2+ years of experience building scalable, high-performance web applications using React.js, Node.js, and modern JavaScript technologies.
+description: `I’m a Full Stack Developer with 2+ years of experience building scalable web apps with React.js, Node.js, and TypeScript.
 
-Currently, I’m working at Wesoftek Solutions as a Software Engineer, where I develop and optimize products like SuperManage (HRMS Platform) and TezCredit (Loan Lending Platform). I contribute across frontend, backend, APIs, real-time systems, payments, and performance optimization.
+I’m a Software Engineer at Wesoftek Solutions, shipping features for SuperManage (HRMS) and TezCredit (lending)—from UI and APIs to payments, real-time flows, and performance.
 
-My core expertise includes:
-
-- Frontend: React.js, JavaScript, TypeScript, Redux, Context API, React Router, Hooks, Vite, HTML, CSS, SCSS, Tailwind CSS
-- Backend: Node.js, Express.js, REST APIs, JWT Authentication, RBAC, WebSockets
-- Databases: PostgreSQL, MongoDB, MySQL
-- Tools: Git, GitLab, Postman, Docker, CI/CD Basics, VS Code
-- Integrations: Razorpay, Easebuzz, PayU
-
-I’m passionate about building clean, efficient, and user-focused applications that solve real business problems while delivering great performance and scalability. Always eager to learn and take on new challenges. Let’s connect`,
+Stack highlights: PostgreSQL, MongoDB, REST, WebSockets, Razorpay, and cloud-ready backends. Let’s connect.`,
   github: "https://github.com/satyaprakash-web",
   resume:
     "https://drive.google.com/file/d/1yfb6cbAxP6l1jP3_MNhFHaJeycY5yosu/view",
@@ -135,16 +127,8 @@ export const skills = [
   },
 
   {
-    title: "Programming",
+    title: "Languages & CS",
     skills: [
-      {
-        name: "JavaScript",
-        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
-      },
-      {
-        name: "TypeScript",
-        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
-      },
       {
         name: "C++",
         image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg",
@@ -206,19 +190,13 @@ export const experiences = [
     role: "Software Engineer",
     company: "Wesoftek Solutions",
     date: "August 2024 - Present",
-    desc: `𝗧𝗲𝘇𝗖𝗿𝗲𝗱𝗶𝘁 – Loan Lending Platform  
-- Built and scaled a high-volume digital lending platform serving 15K–20K daily users with end-to-end loan lifecycle flows including onboarding, KYC, approval, disbursal, repayment, and notifications.  
-- Developed full stack modules using React.js, Node.js, and REST APIs, improving performance and reliability.  
-- Optimized PostgreSQL queries, stored procedures, and backend services for high-concurrency workloads.  
-- Integrated payment gateways such as Easebuzz and PayU with webhook-based real-time status sync and reconciliation.  
-- Refactored critical modules from monolith to AWS Lambda architecture, improving scalability and response time.  
+    desc: `𝗧𝗲𝘇𝗖𝗿𝗲𝗱𝗶𝘁 – Lending  
+- High-volume loan lifecycle for ~15K–20K daily users: onboarding, KYC, approvals, disbursal, repayment, and notifications; tuned PostgreSQL and REST services for concurrency.  
+- Easebuzz & PayU with webhooks and reconciliation; moved critical paths to AWS Lambda for scalability and faster responses.
 
-𝗦𝘂𝗽𝗲𝗿𝗠𝗮𝗻𝗮𝗴𝗲 – HRMS Platform  
-- Developed scalable HRMS modules including Attendance, Leave, Payroll, Overtime, Cashbook, Expense, and Admin management used by multiple organizations.  
-- Built multi-level approval workflows, reducing manual operations by 30%+.  
-- Implemented subscription billing, Razorpay integration, coupon systems, and plan-based access control.  
-- Built analytics dashboards and charts for user activity, attendance, and payments.  
-- Delivered customizable payslip and invoice generation systems using Node.js microservices with dynamic templates, real-time PDF preview, export/download features, and processing 200+ monthly downloads.`,
+𝗦𝘂𝗽𝗲𝗿𝗠𝗮𝗻𝗮𝗴𝗲 – HRMS  
+- Multi-tenant workforce product: employees, payroll, attendance/leave, cashbook & expense, documents, vehicles, inventory, and admin—streamlined org-wide operations.  
+- Subscriptions, Razorpay billing, coupons, and RBAC; payslip & invoice generation (templates, PDF preview, exports); supervisor dashboards and multi-level approvals (30%+ less manual work); analytics for attendance and payments.`,
     skills: [
       "React.js",
       "Node.js",
@@ -242,15 +220,11 @@ export const experiences = [
     role: "Software Engineer Intern",
     company: "Wesoftek Solutions",
     date: "December 2023 - July 2024",
-    desc: `𝗩𝗶𝘀𝗶𝘁𝗼𝗿𝗫𝗦𝘆𝘀 – Visitor Management Platform  
-- Built responsive onboarding and signup flows with secure authentication and free-trial access.  
-- Developed QR-based self check-in/check-out system with live image capture and badge printing, handling 100+ daily visitors.  
-- Improved visitor tracking and reduced manual front-desk operations by 60%.  
+    desc: `𝗩𝗶𝘀𝗶𝘁𝗼𝗿𝗫𝗦𝘆𝘀 – Visitor Management  
+- Secure onboarding, auth, and trial access; QR self check-in/out with capture and badge printing for 100+ daily visitors—about 60% less manual front-desk work.
 
-𝗩𝗲𝗵𝗶𝗰𝗹𝗲 & 𝗜𝗻𝘃𝗲𝗻𝘁𝗼𝗿𝘆 𝗠𝗮𝗻𝗮𝗴𝗲𝗺𝗲𝗻𝘁  
-- Built dashboards for vehicles, drivers, fuel logs, expenses, and maintenance tracking.  
-- Designed inventory modules for supplier onboarding, stock in/out adjustments, category management, and reporting.  
-- Streamlined internal operations and reduced processing time by 30%.`,
+𝗩𝗲𝗵𝗶𝗰𝗹𝗲 & 𝗜𝗻𝘃𝗲𝗻𝘁𝗼𝗿𝘆  
+- Fleet dashboards (vehicles, drivers, fuel, maintenance, expenses) and inventory (suppliers, stock in/out, categories, reporting)—roughly 30% faster operational processing.`,
     skills: [
       "React.js",
       "JavaScript",
@@ -275,7 +249,7 @@ export const education = [
     school: "Lovely Professional University, Jalandhar",
     date: "Aug 2020 - July 2024",
     grade: "8.3 CGPA",
-    desc: "I completed my Bachelor's degree in Computer Science and Engineering at Lovely Professional University with a CGPA of 8.3., Jalandhar, Punjab.  I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others.",
+    desc: "BTech in Computer Science & Engineering (CGPA 8.3). Coursework includes DSA, OOP, DBMS, operating systems, and computer networks.",
     degree: "Bachelor of Technology - BTech, Computer Science and Engineering",
   },
   {

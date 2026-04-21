@@ -17,21 +17,22 @@ const Button = styled.button`
 `
 const Card = styled.div`
     width: 330px;
-    height: 490px;
+    min-height: 460px;
     background-color: ${({ theme }) => theme.card};
     cursor: pointer;
-    border-radius: 10px;
-    box-shadow: 0 0 12px 4px rgba(0,0,0,0.4);
+    border-radius: 14px;
+    border: 1px solid ${({ theme }) => theme.border};
+    box-shadow: 0 16px 40px rgba(0,0,0,0.25);
     overflow: hidden;
-    padding: 26px 20px;
+    padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 14px;
-    transition: all 0.5s ease-in-out;
+    align-items: stretch;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
     &:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 0 50px 4px rgba(0,0,0,0.6);
-        filter: brightness(1.1);
+        transform: translateY(-6px);
+        border-color: ${({ theme }) => theme.primary + "45"};
+        box-shadow: 0 22px 50px rgba(0,0,0,0.35);
     }
     &:hover ${Button} {
         display: block;
@@ -40,10 +41,19 @@ const Card = styled.div`
 
 const Image = styled.img`
     width: 100%;
-    height: 180px;
-    background-color: ${({ theme }) => theme.white};
-    border-radius: 10px;
-    box-shadow: 0 0 16px 2px rgba(0,0,0,0.3);
+    height: 200px;
+    object-fit: cover;
+    object-position: top center;
+    background-color: ${({ theme }) => theme.bgLight};
+    flex-shrink: 0;
+`
+
+const CardBody = styled.div`
+    padding: 16px 18px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
 `
 
 const Tags = styled.div`
@@ -56,12 +66,13 @@ const Tags = styled.div`
 `
 
 const Tag = styled.span`
-    font-size: 12px;
-    font-weight: 400;
+    font-size: 11px;
+    font-weight: 500;
     color: ${({ theme }) => theme.primary};
-    background-color: ${({ theme }) => theme.primary + 15};
-    padding: 2px 8px;
-    border-radius: 10px;
+    background-color: ${({ theme }) => theme.primary + 18};
+    padding: 4px 10px;
+    border-radius: 999px;
+    border: 1px solid ${({ theme }) => theme.border};
 `
 
 const Details = styled.div`
@@ -125,10 +136,11 @@ const Avatar = styled.img`
 const ProjectCards = ({project,setOpenModal}) => {
     return (
         <Card onClick={() => setOpenModal({state: true, project: project})}>
-            <Image src={project.image}/>
+            <Image src={project.image} alt="" />
+            <CardBody>
             <Tags>
-                {project.tags?.map((tag, index) => (
-                <Tag>{tag}</Tag>
+                {project.tags?.map((tag) => (
+                <Tag key={tag}>{tag}</Tag>
                 ))}
             </Tags>
             <Details>
@@ -137,10 +149,11 @@ const ProjectCards = ({project,setOpenModal}) => {
                 <Description>{project.description}</Description>
             </Details>
             <Members>
-                {project.member?.map((member) => (
-                    <Avatar src={member.img}/>
+                {project.member?.map((member, idx) => (
+                    <Avatar key={idx} src={member.img}/>
                 ))}
             </Members>
+            </CardBody>
             {/* <Button>View Project</Button> */}
         </Card>
     )

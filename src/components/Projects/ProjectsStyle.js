@@ -2,14 +2,14 @@ import styled from 'styled-components';
 import _default from '../../themes/default';
 
 export const Container = styled.div`
-    background: linear-gradient(343.07deg, rgba(132, 59, 206, 0.06) 5.71%, rgba(132, 59, 206, 0) 64.83%);
+    background: radial-gradient(80% 50% at 50% 0%, rgba(139, 124, 248, 0.08) 0%, transparent 55%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
     z-index: 1;
     align-items: center;
-    clip-path: polygon(0 0, 100% 0, 100% 100%,100% 98%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 99.2%, 0 100%);
 `;
 
 export const Wrapper = styled.div`
@@ -20,8 +20,8 @@ export const Wrapper = styled.div`
     flex-direction: column;
     width: 100%;
     max-width: 1350px;
-    padding: 10px 0px 100px 0;
-    gap: 12px;
+    padding: 8px 0 72px;
+    gap: 8px;
     @media (max-width: 960px) {
         flex-direction: column;
     }
@@ -52,46 +52,47 @@ export const Desc = styled.div`
 
 export const ToggleButtonGroup = styled.div`
     display: flex;
-    border: 1.5px solid ${({ theme }) => theme.primary};
-    color: ${({ theme }) => theme.primary};
-    font-size: 16px;
-    border-radius: 12px;
-    font-weight: 500;
-    margin: 22px 0px;
+    border: 1px solid ${({ theme }) => theme.border};
+    background: ${({ theme }) => theme.card};
+    color: ${({ theme }) => theme.text_secondary};
+    font-size: 14px;
+    border-radius: 10px;
+    font-weight: 600;
+    margin: 12px 0 8px;
+    overflow: hidden;
     @media (max-width: 768px) {
         font-size: 12px;
     }
 `
 
 export const ToggleButton = styled.div`
-    padding: 8px 18px;
-    border-radius: 6px;
+    padding: 10px 20px;
     cursor: pointer;
-    ${({ active, theme }) =>
-        active && `
-    background: ${theme.primary + 20};
-    `
-    }
+    transition: background 0.2s ease, color 0.2s ease;
+    color: ${({ active, theme }) => (active ? theme.white : theme.text_secondary)};
+    background: ${({ active, theme }) => (active ? theme.primary : "transparent")};
     &:hover {
-        background: ${({ theme }) => theme.primary + 8};
+        background: ${({ active, theme }) =>
+          active ? theme.primary : theme.primary + "18"};
+        color: ${({ active, theme }) => (active ? theme.white : theme.text_primary)};
     }
     @media (max-width: 768px) {
-        padding: 6px 8px;
-        border-radius: 4px;
+        padding: 8px 12px;
     }
 `
 export const Divider = styled.div`
-    width: 1.5px;
-    background: ${({ theme }) => theme.primary};
+    width: 1px;
+    background: ${({ theme }) => theme.border};
 `
 
 
 export const CardContainer = styled.div`
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 28px;
+    align-items: flex-start;
+    gap: 24px;
     flex-wrap: wrap;
+    margin-top: 8px;
     // display: grid;
     // grid-template-columns: repeat(3, 1fr);
     // grid-gap: 32px;

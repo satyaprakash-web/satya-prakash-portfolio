@@ -110,7 +110,7 @@ function Footer() {
           </SocialMediaIcon>
         </SocialMediaIcons>
         <Copyright>
-          &copy; 2023 Satya Prakash Tiwari. All rights reserved.
+          &copy; {new Date().getFullYear()} Satya Prakash Tiwari. All rights reserved.
         </Copyright>
       </FooterWrapper>
     </FooterContainer>

@@ -31,26 +31,31 @@ max-width: 100%;
 -webkit-line-clamp: 4;
 -webkit-box-orient: vertical;
 text-overflow: ellipsis;
+white-space: pre-line;
+line-height: 1.5;
 `
 
 const Card = styled.div`
     width: 650px;
-    border-radius: 10px;
-    box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
-    padding: 12px 16px;
+    border-radius: 14px;
+    background: ${({ theme }) => theme.card};
+    border: 1px solid ${({ theme }) => theme.border};
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.22);
+    padding: 16px 18px;
     justify-content: space-between;
     position: relative;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     gap: 12px;
-    transition: all 0.3s ease-in-out;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
     &:hover{
-        box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
-        transform: translateY(-5px);
+        border-color: ${({ theme }) => theme.primary + "40"};
+        box-shadow: 0 20px 56px rgba(0, 0, 0, 0.28);
+        transform: translateY(-3px);
     }
     @media only screen and (max-width: 768px){
-        padding: 10px;
+        padding: 12px 14px;
         gap: 8px;
         width: 300px;
     }
@@ -64,7 +69,6 @@ const Card = styled.div`
         -webkit-line-clamp: unset;
 
     }
-    border: 0.1px solid #854CE6;
 `
 
 const Top = styled.div`
