@@ -61,9 +61,10 @@ const ContactForm = styled.form`
   display: flex;
   flex-direction: column;
   background-color: ${({ theme }) => theme.card};
+  border: 1px solid ${({ theme }) => theme.border};
   padding: 32px;
-  border-radius: 16px;
-  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+  border-radius: 14px;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.22);
   margin-top: 28px;
   gap: 12px;
 `

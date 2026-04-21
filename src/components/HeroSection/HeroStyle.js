@@ -6,16 +6,16 @@ export const HeroContainer = styled.div`
   display: flex;
   justify-content: center;
   position: relative;
-  padding: 80px 30px;
+  padding: 48px 24px 72px;
   @media (max-width: 960px) {
-    padding: 66px 16px;
+    padding: 40px 16px 56px;
   }
   @media (max-width: 640) {
-    padding: 32px 16px;
+    padding: 28px 16px 40px;
   }
   z-index: 1;
 
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 78% 97.5%, 0 100%);
 `;
 
 export const HeroBg = styled.div`
@@ -46,12 +46,13 @@ export const HeroInnerContainer = styled.div`
   position: relative;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
   max-width: 1100px;
 
   @media (max-width: 960px) {
     flex-direction: column;
+    align-items: center;
   }
 `;
 export const HeroLeftContainer = styled.div`
@@ -84,11 +85,11 @@ export const HeroRightContainer = styled.div`
     order: 1;
     justify-content: center;
     align-items: center;
-    margin-bottom: 80px;
+    margin-bottom: 36px;
   }
 
   @media (max-width: 640px) {
-    margin-bottom: 30px;
+    margin-bottom: 24px;
   }
 `;
 
@@ -99,7 +100,9 @@ export const Img = styled.img`
   max-width: 330px;
   max-height: 415px;
   border-radius: 50%;
-  border: 2px solid ${({ theme }) => theme.primary};
+  border: 2px solid ${({ theme }) => theme.border};
+  box-shadow: 0 0 0 3px ${({ theme }) => theme.primary + "35"},
+    0 24px 48px rgba(0, 0, 0, 0.35);
 
   @media (max-width: 768px) {
     max-width: 400px;
@@ -152,17 +155,22 @@ export const Span = styled.span`
 
 export const SubTitle = styled.div`
   font-size: 20px;
-  line-height: 32px;
+  line-height: 1.65;
+  margin-top: 12px;
   margin-bottom: 42px;
+  max-width: 720px;
   color: ${({ theme }) => theme.text_primary + 95};
+  white-space: pre-line;
 
   @media (max-width: 960px) {
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media (max-width: 640px) {
     font-size: 16px;
-    line-height: 32px;
+    line-height: 1.65;
   }
 `;
 
@@ -174,30 +182,22 @@ export const ResumeButton = styled.a`
     width: 95%;
     max-width: 300px;
     text-align: center;
-    padding: 16px 0;
-    color:${({ theme }) => theme.white};
-    border-radius: 20px;
+    padding: 14px 0;
+    color: ${({ theme }) => theme.white};
+    border-radius: 12px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
-    transition: all 0.2s ease-in-out !important;
-    background: hsla(271, 100%, 50%, 1);
-    background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    box-shadow:  20px 20px 60px #1F2634,
-    -20px -20px 60px #1F2634;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+    background: ${({ theme }) => theme.primary};
+    box-shadow: 0 10px 28px ${({ theme }) => theme.primary + "44"};
     &:hover {
-        transform: scale(1.05);
-    transition: all 0.4s ease-in-out;
-    box-shadow:  20px 20px 60px #1F2634,
-    filter: brightness(1);
-    }    
-    
-    
+        transform: translateY(-2px);
+        filter: brightness(1.06);
+        box-shadow: 0 14px 36px ${({ theme }) => theme.primary + "55"};
+    }
     @media (max-width: 640px) {
         padding: 12px 0;
-        font-size: 18px;
-    } 
-
+        font-size: 16px;
+    }
 `;
