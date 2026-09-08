@@ -12,7 +12,7 @@ const Projects = ({openModal,setOpenModal}) => {
       <Wrapper>
         <Title>Projects</Title>
         <Desc>
-          Selected builds—full-stack apps and interfaces I shipped end to end.
+          Production platforms I've led at scale, plus personal builds I shipped end to end.
         </Desc>
         <ToggleButtonGroup >
           {toggle === 'all' ?
@@ -21,10 +21,16 @@ const Projects = ({openModal,setOpenModal}) => {
             <ToggleButton value="all" onClick={() => setToggle('all')}>All</ToggleButton>
           }
           <Divider />
-          {toggle === 'web app' ?
-            <ToggleButton active value="web app" onClick={() => setToggle('web app')}>Web apps</ToggleButton>
+          {toggle === 'flagship' ?
+            <ToggleButton active value="flagship" onClick={() => setToggle('flagship')}>Flagship Work</ToggleButton>
             :
-            <ToggleButton value="web app" onClick={() => setToggle('web app')}>Web apps</ToggleButton>
+            <ToggleButton value="flagship" onClick={() => setToggle('flagship')}>Flagship Work</ToggleButton>
+          }
+          <Divider />
+          {toggle === 'personal' ?
+            <ToggleButton active value="personal" onClick={() => setToggle('personal')}>Personal Projects</ToggleButton>
+            :
+            <ToggleButton value="personal" onClick={() => setToggle('personal')}>Personal Projects</ToggleButton>
           }
         </ToggleButtonGroup>
         <CardContainer>

@@ -2,18 +2,18 @@ import images from "../images/index.js";
 export const Bio = {
   name: "Satya Prakash Tiwari",
  roles: [
-  "Frontend Developer",
-  "Backend Developer",
-  "Full Stack Developer",
-  "Software Engineer",
+  "Senior Software Engineer",
+  "GenAI / AI Engineer",
+  "Full Stack Engineer",
+  "Agentic AI Builder",
   "Problem Solver"
 ],
 
-description: `I’m a Full Stack Developer with 2+ years of experience building scalable web apps with React.js, Node.js, and TypeScript.
+description: `I'm a Senior Software Engineer with 2.5+ years building scalable FinTech, enterprise SaaS, and AI-powered platforms with React.js, Next.js, Node.js, NestJS, PostgreSQL, and MongoDB.
 
-I’m a Software Engineer at Wesoftek Solutions, shipping features for SuperManage (HRMS) and TezCredit (lending)—from UI and APIs to payments, real-time flows, and performance.
+I design and ship Generative AI / Agentic AI systems—RAG pipelines, RAG evaluation, LLM orchestration with LangChain/LangGraph, MCP, and AI guardrails—on top of production-grade backends.
 
-Stack highlights: PostgreSQL, MongoDB, REST, WebSockets, Razorpay, and cloud-ready backends. Let’s connect.`,
+Delivered a digital lending platform processing ₹300+ Crore in disbursals for 15K–20K daily users, enterprise HRMS modules for 10K+ employees, and an AI learning platform with real-time simulations and multi-model LLM integrations. Let's connect.`,
   github: "https://github.com/satyaprakash-web",
   resume:
     "https://drive.google.com/file/d/1yfb6cbAxP6l1jP3_MNhFHaJeycY5yosu/view",
@@ -67,6 +67,60 @@ export const skills = [
         name: "Vite",
         image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/vitejs/vitejs-original.svg",
       },
+      {
+        name: "Next.js",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg",
+      },
+    ],
+  },
+
+  {
+    title: "Generative AI / Agentic AI",
+    skills: [
+      {
+        name: "LangChain",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/langchain/langchain-original.svg",
+      },
+      {
+        name: "LangGraph",
+        image: "https://cdn-icons-png.flaticon.com/512/8637/8637101.png",
+      },
+      {
+        name: "RAG",
+        image: "https://cdn-icons-png.flaticon.com/512/2103/2103652.png",
+      },
+      {
+        name: "Vector Databases",
+        image: "https://cdn-icons-png.flaticon.com/512/2920/2920052.png",
+      },
+      {
+        name: "AI Agents",
+        image: "https://cdn-icons-png.flaticon.com/512/4712/4712035.png",
+      },
+      {
+        name: "Prompt Engineering",
+        image: "https://cdn-icons-png.flaticon.com/512/9850/9850933.png",
+      },
+      {
+        name: "MCP",
+        image: "https://cdn-icons-png.flaticon.com/512/2721/2721620.png",
+      },
+      {
+        name: "OpenAI / GPT-4o",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/openai/openai-original.svg",
+      },
+      {
+        name: "Google Gemini",
+        image: "https://www.gstatic.com/lamda/images/gemini_sparkle_v002_advanced_9d76ff2fb0a54808f28e5b64c9c8f8e0f5.svg",
+      },
+      {
+        name: "Claude",
+        image: "https://cdn-icons-png.flaticon.com/512/9850/9850940.png",
+      },
+      {
+        name: "AI Guardrails",
+        image: "https://cdn-icons-png.flaticon.com/512/2913/2913133.png",
+      },
     ],
   },
 
@@ -76,6 +130,10 @@ export const skills = [
       {
         name: "Node.js",
         image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg",
+      },
+      {
+        name: "NestJS",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nestjs/nestjs-original.svg",
       },
       {
         name: "Express.js",
@@ -179,6 +237,18 @@ export const skills = [
         name: "Razorpay",
         image: "https://cdn.worldvectorlogo.com/logos/razorpay.svg",
       },
+      {
+        name: "GitLab CI/CD",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/gitlab/gitlab-original.svg",
+      },
+      {
+        name: "Grafana",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/grafana/grafana-original.svg",
+      },
+      {
+        name: "AWS S3 / Lambda",
+        image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+      },
     ],
   },
 ];
@@ -187,30 +257,42 @@ export const experiences = [
   {
     id: 1,
     img: "",
-    role: "Software Engineer",
+    role: "Senior Software Engineer",
     company: "Wesoftek Solutions",
     date: "August 2024 - Present",
-    desc: `𝗧𝗲𝘇𝗖𝗿𝗲𝗱𝗶𝘁 – Lending  
-- High-volume loan lifecycle for ~15K–20K daily users: onboarding, KYC, approvals, disbursal, repayment, and notifications; tuned PostgreSQL and REST services for concurrency.  
-- Easebuzz & PayU with webhooks and reconciliation; moved critical paths to AWS Lambda for scalability and faster responses.
+    desc: `𝗧𝗲𝘇𝗖𝗿𝗲𝗱𝗶𝘁 – Enterprise Digital Lending Platform
+- Led end-to-end development of a high-scale lending platform serving 15K–20K daily active users and enabling ₹300+ Crore in loan disbursals.
+- Designed and maintained 60+ production REST APIs (Node.js, NestJS, Express.js, PostgreSQL) across 10+ loan-lifecycle modules; delivered 25+ production releases integrating 20+ third-party services (PayU, Easebuzz, Bureau BRE, Bank BRE, payment gateways, SMS/Email, webhooks).
+- Built 10+ Cron Jobs on AWS Lambda for sanctioning, agreement generation, repayment sync, and reporting; moved business logic into PostgreSQL Functions/Stored Procedures, improving API performance by ~25%.
+- Built operational dashboards for disbursals, collections, and API health using Grafana and Loki.
 
-𝗦𝘂𝗽𝗲𝗿𝗠𝗮𝗻𝗮𝗴𝗲 – HRMS  
-- Multi-tenant workforce product: employees, payroll, attendance/leave, cashbook & expense, documents, vehicles, inventory, and admin—streamlined org-wide operations.  
-- Subscriptions, Razorpay billing, coupons, and RBAC; payslip & invoice generation (templates, PDF preview, exports); supervisor dashboards and multi-level approvals (30%+ less manual work); analytics for attendance and payments.`,
+𝗧𝗲𝗮𝗰𝗵𝗶𝘁𝘆 – AI-Powered Learning Platform
+- Led full-stack development of a multi-tenant AI SaaS platform (React.js, NestJS, TypeScript, MongoDB) with 20+ configurable AI simulation workflows powered by OpenAI GPT-4o and Google Gemini.
+- Designed RAG pipelines (ingestion, chunking, embeddings, vector search, contextual retrieval) and RAG evaluation workflows to measure retrieval relevance and response accuracy.
+- Engineered Agentic AI workflows using LangChain/LangGraph patterns—tool calling, workflow routing, structured outputs, and multi-step orchestration—plus MCP-based tool/context integration.
+- Implemented AI guardrails: input/output validation, prompt-injection awareness, tenant-level data isolation, and controlled tool access.
+
+𝗦𝘂𝗽𝗲𝗿𝗠𝗮𝗻𝗮𝗴𝗲 – Enterprise HRMS
+- Led 12+ HRMS modules for organizations with 10K+ employees: Task Management, Payroll Pro, Invoice Management, Attendance, Leave, Expense, Asset, Material, Reports, and Subscriptions.
+- Built a configurable Task Workflow Engine (role-based approvals, real-time collaboration, proof validation, 6-stage lifecycle) and an Invoice system with reusable templates, GST handling, and PDF generation.`,
     skills: [
       "React.js",
+      "Next.js",
       "Node.js",
-      "JavaScript",
+      "NestJS",
       "TypeScript",
-      "Redux",
-      "Context API",
       "PostgreSQL",
       "MongoDB",
       "REST APIs",
-      "Razorpay",
       "AWS Lambda",
+      "LangChain",
+      "LangGraph",
+      "RAG",
+      "Agentic AI",
+      "MCP",
+      "OpenAI GPT-4o",
+      "Google Gemini",
       "WebSockets",
-      "Microservices",
     ],
   },
 
@@ -274,6 +356,42 @@ export const education = [
 
 export const projects = [
   {
+    id: -1,
+    title: "TezCredit — Digital Lending Platform",
+    date: "Aug 2024 – Present",
+    description:
+      "Enterprise digital lending platform serving 15K–20K daily active users and enabling ₹300+ Crore in loan disbursals. Designed and maintained 60+ production REST APIs across 10+ loan-lifecycle modules, integrated 20+ third-party services (PayU, Easebuzz, Bureau BRE, Bank BRE), and built 10+ automated Cron Jobs on AWS Lambda. Optimized SQL workloads via PostgreSQL Functions/Stored Procedures, improving API performance by ~25%.",
+    image: null,
+    tags: ["Node.js", "NestJS", "PostgreSQL", "AWS Lambda", "REST APIs", "Grafana"],
+    category: "flagship",
+    github: null,
+    webapp: null,
+  },
+  {
+    id: -2,
+    title: "Teachity — AI-Powered Learning Platform",
+    date: "Aug 2024 – Present",
+    description:
+      "Multi-tenant AI SaaS platform with 20+ configurable AI simulation workflows powered by OpenAI GPT-4o and Google Gemini. Designed RAG pipelines (ingestion, chunking, embeddings, vector search, grounded generation) and RAG evaluation for retrieval quality. Engineered Agentic AI workflows with LangChain/LangGraph, tool calling, MCP-based tool integration, and AI guardrails for prompt-injection awareness and tenant data isolation.",
+    image: null,
+    tags: ["React.js", "NestJS", "LangChain", "LangGraph", "RAG", "MCP", "OpenAI", "Gemini"],
+    category: "flagship",
+    github: null,
+    webapp: null,
+  },
+  {
+    id: -3,
+    title: "SuperManage — Enterprise HRMS",
+    date: "Aug 2024 – Present",
+    description:
+      "12+ enterprise HRMS modules supporting organizations with 10K+ employees, including Payroll Pro, Invoice Management, Attendance, Leave, Expense, and Asset management. Engineered a configurable Task Management Workflow Engine with role-based approvals, real-time collaboration, proof validation, and a 6-stage task lifecycle, plus a flexible GST-aware Invoice Management System with PDF generation.",
+    image: null,
+    tags: ["React.js", "NestJS", "MongoDB", "RBAC", "PDF Generation"],
+    category: "flagship",
+    github: null,
+    webapp: null,
+  },
+  {
     id: 0,
     title: "Blog-app",
     date: "Apr 2023 ",
@@ -281,7 +399,7 @@ export const projects = [
       "Developed a full-stack web application that allows users to create account, login and write blog posts.To enhance security, I implemented password hashing using the Bcrypt Js library. Users can easily filter posts by clicking on the author's name. The application utilizes MongoDB for storing user data and offers CRUD operations for blog posts, as well as updating user profiles through using REST API.",
     image: images.blogApp,
     tags: ["React Js", "Node Js", "Express Js", "MongoDb", "Redux", "REST API"],
-    category: "web app",
+    category: "personal",
     github: "https://github.com/satyaprakash-web",
     webapp: "https://blogs-trust-frontend.vercel.app/login/",
   },
@@ -301,7 +419,7 @@ export const projects = [
       "NodeMailer",
       "JWT Authentication",
     ],
-    category: "web app",
+    category: "personal",
     github: "https://github.com/satyaprakash-web",
     webapp: "https://task-reminder-frontend-six.vercel.app/",
   },
@@ -314,7 +432,7 @@ export const projects = [
       "Developed a weather information app that retrieves real-time weather details for any location, including current temperature, humidity, wind speed, and real feel. The app also displays the localized date and time information, integrates a search feature, and provides sunrise and sunset times, all powered by a reliable weather API for accurate and up-to-date data.",
     image: images.weatherApp,
     tags: ["React js", "Tailwind CSS", "Open weather API"],
-    category: "web app",
+    category: "personal",
     github: "https://github.com/satyaprakash-web",
     webapp: "https://12686871.satyaweather.pages.dev/",
   },
@@ -326,7 +444,7 @@ export const projects = [
       "Welcome to VEGGILANCE GROCERY, your one-stop online destination for all your grocery needs. Shop for fresh fruits, vegetables, pulses, bread, and more, anytime, anywhere. Our user-friendly website combines HTML, CSS, and JavaScript to offer a seamless and visually appealing shopping experience. Say goodbye to the hassle of traditional grocery shopping and embrace the convenience of online ordering, 24/7.",
     image: images.groceryWebsite,
     tags: ["HTML", "CSS", "Javascipt"],
-    category: "Web-app",
+    category: "personal",
     webapp: "https://grocery-website-ten-delta.vercel.app/",
     github: "https://github.com/satyaprakash-web",
   },

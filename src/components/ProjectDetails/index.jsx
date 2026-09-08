@@ -73,6 +73,29 @@ const Image = styled.img`
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
 `;
 
+const ImagePlaceholder = styled.div`
+    width: 100%;
+    height: 220px;
+    margin-top: 30px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 16px;
+    background: linear-gradient(135deg, ${({ theme }) => theme.primary + "33"}, ${({ theme }) => theme.bgLight});
+    color: ${({ theme }) => theme.text_secondary};
+    font-size: 16px;
+    font-weight: 600;
+`;
+
+const Note = styled.div`
+    font-size: 13px;
+    font-style: italic;
+    color: ${({ theme }) => theme.text_secondary};
+    margin: 8px 6px 0;
+`;
+
 const Label = styled.div`
     font-size: 20px;
     font-weight: 600;
@@ -197,7 +220,11 @@ const index = ({ openModal, setOpenModal }) => {
                         }}
                         onClick={() => setOpenModal({ state: false, project: null })}
                     />
-                    <Image src={project?.image} />
+                    {project?.image ? (
+                        <Image src={project.image} />
+                    ) : (
+                        <ImagePlaceholder>{project?.title}</ImagePlaceholder>
+                    )}
                     <Title>{project?.title}</Title>
                     <Date>{project.date}</Date>
                     <Tags>
@@ -225,9 +252,16 @@ const index = ({ openModal, setOpenModal }) => {
                             </Members>
                         </>
                     )}
+                    {!project?.github && !project?.webapp && (
+                        <Note>Confidential enterprise project — code and live access are not publicly shareable.</Note>
+                    )}
                     <ButtonGroup>
-                        <Button dull href={project?.github} target='new'>View Code</Button>
-                        <Button href={project?.webapp} target='new'>View Live App</Button>
+                        {project?.github && (
+                            <Button dull href={project.github} target='new'>View Code</Button>
+                        )}
+                        {project?.webapp && (
+                            <Button href={project.webapp} target='new'>View Live App</Button>
+                        )}
                     </ButtonGroup>
                 </Wrapper>
             </Container>
