@@ -16,7 +16,7 @@ I design and ship Generative AI / Agentic AI systems—RAG pipelines, RAG evalua
 Delivered a digital lending platform processing ₹300+ Crore in disbursals for 15K–20K daily users, enterprise HRMS modules for 10K+ employees, and an AI learning platform with real-time simulations and multi-model LLM integrations. Let's connect.`,
   github: "https://github.com/satyaprakash-web",
   resume:
-    "https://drive.google.com/file/d/1yfb6cbAxP6l1jP3_MNhFHaJeycY5yosu/view",
+    "https://drive.google.com/file/d/1jYXntq_mEmtoL2dPsgeQXWJjPcKeIsLp/view",
   linkedin: "https://www.linkedin.com/in/satyaprakash-web",
   twitter: "https://www.instagram.com/satya_prakash872/",
   insta: "https://www.instagram.com/satya_prakash872/",

@@ -119,7 +119,28 @@ const ContactButton = styled.input`
   color: ${({ theme }) => theme.text_primary};
   font-size: 18px;
   font-weight: 600;
+  cursor: pointer;
 `
+
+const MailFallback = styled.button`
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  background: transparent;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid ${({ theme }) => theme.text_secondary};
+  color: ${({ theme }) => theme.text_secondary};
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  &:hover {
+    border-color: ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.text_primary};
+  }
+`
+
+const RECIPIENT_EMAIL = "satyaprakash1684@gmail.com";
 
 
 
@@ -129,14 +150,31 @@ const Contact = () => {
   const [open, setOpen] = React.useState(false);
   const form = useRef();
 
+  const buildMailtoLink = () => {
+    const data = new FormData(form.current);
+    const name = data.get('from_name') || '';
+    const email = data.get('from_email') || '';
+    const subject = data.get('subject') || `Portfolio inquiry from ${name || 'a visitor'}`;
+    const message = data.get('message') || '';
+    const body = `${message}\n\n---\nFrom: ${name}${email ? ` <${email}>` : ''}`;
+    return `mailto:${RECIPIENT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  }
+
+  const openMailComposer = () => {
+    window.location.href = buildMailtoLink();
+  }
+
   const handleSubmit = (e) => {
     e.preventDefault();
     emailjs.sendForm('service_tox7kqs', 'template_nv7k7mj', form.current, 'SybVGsYS52j2TfLbi')
-      .then((result) => {
+      .then(() => {
         setOpen(true);
         form.current.reset();
       }, (error) => {
-        console.log(error.text);
+        console.log(error?.text || error);
+        // EmailJS failed (e.g. quota, misconfigured service) — fall back to
+        // the visitor's own mail client so the message isn't lost.
+        openMailComposer();
       });
   }
 
@@ -154,6 +192,9 @@ const Contact = () => {
           <ContactInput placeholder="Subject" name="subject" />
           <ContactInputMessage placeholder="Message" rows="4" name="message" />
           <ContactButton type="submit" value="Send" />
+          <MailFallback type="button" onClick={openMailComposer}>
+            Or open in your email app
+          </MailFallback>
         </ContactForm>
         <Snackbar
           open={open}
